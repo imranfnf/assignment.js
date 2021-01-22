@@ -1,14 +1,15 @@
 
 
 
-// function kilometerToMeter(kilometer) {
+function kilometerToMeter(kilometer) {
 
-//     var meter = kilometer / 1000;
-//     return meter;
-// }
+    var meter = kilometer / 1000;
+    var meter = Math.abs(meter);
+    return meter;
+}
 
-// var meter = kilometerToMeter(1);
-// console.log("Meter =", meter);
+var meter = kilometerToMeter(150);
+console.log("Meter =", meter);
 
 
 
@@ -17,52 +18,52 @@
 
 
 
-// function hotelCost(cost) {
+function hotelCost(cost) {
 
 
-//     var spent = 0;
+    var spent = 0;
 
-//     if (cost <= 10) {
-//         var spent = cost * 100;
-//     }
-//     else if (cost <= 20) {
-//         var firstPart = 10 * 100;
-//         var remaining = cost - 10;
-//         var secontPart = remaining * 80;
-//         total = firstPart + secontPart;
+    if (cost <= 10) {
+        var spent = cost * 100;
+    }
+    else if (cost <= 20) {
+        var firstPart = 10 * 100;
+        var remaining = cost - 10;
+        var secontPart = remaining * 80;
+        total = firstPart + secontPart;
 
-//     } else {
+    } else {
 
-//         var firstPart = 10 * 100;
-//         var secontPart = 20 * 80;
-//         var remaining = cost - 20;
-//         var thirdPart = remaining * 50;
-//         total = firstPart + secontPart + thirdPart;
-//     }
-//     return total;
-// }
+        var firstPart = 10 * 100;
+        var secontPart = 20 * 80;
+        var remaining = cost - 20;
+        var thirdPart = remaining * 50;
+        total = firstPart + secontPart + thirdPart;
+    }
+    return total;
+}
 
-// var result = hotelCost(71);
-// console.log(result);
+var result = hotelCost(71);
+console.log(result);
 
 
 // /////////////////////
 
 
 
-// function budgetCalculator(watch, phone, laptop) {
+function budgetCalculator(watch, phone, laptop) {
 
-//     var watch = 50;
-//     var phone = 100;
-//     var laptop = 500;
-//     var total = watch + phone + laptop;
-//     var result = total;
+    var watch = 50;
+    var phone = 100;
+    var laptop = 500;
+    var total = watch + phone + laptop;
+    var result = total;
 
-//     return result;
-// }
+    return result;
+}
 
-// var output = budgetCalculator()
-// console.log(output);
+var output = budgetCalculator()
+console.log(output);
 
 
 
